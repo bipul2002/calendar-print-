@@ -1,0 +1,438 @@
+@import '../node_modules/primeng/resources/primeng.min.css';
+@import '../node_modules/primeflex/primeflex.scss';
+@import '../node_modules/primeicons/primeicons.css';
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.pi-plus {
+  padding-right: 8px;
+}
+
+.p-dropdown {
+  width: 100% !important;
+}
+
+.p-multiselect {
+  width: 100% !important;
+}
+
+// Card SCSS overwrite
+.layout-dashboard .overview-box .overview-numbers {
+  font-size: 14px !important;
+}
+
+//Stepper overridden
+.p-steps .p-steps-item .p-menuitem-link {
+  background-color: transparent !important;
+}
+
+.p-steps .p-steps-item .p-menuitem-link:not(.p-disabled):focus {
+  box-shadow: none !important;
+}
+
+.btn-right {
+  display: flex;
+  justify-content: right;
+}
+
+p-password.border-unset > .p-password > .p-inputtext {
+  border: 1px solid #ced4da !important;
+}
+
+.icon-class {
+  font-size: 24px;
+  line-height: inherit;
+}
+
+.sub-item-icon {
+  margin-right: 8px;
+  color: #727272;
+}
+
+.login-user-icon {
+  position: absolute;
+  color: #727272;
+  font-size: 16px;
+  top: 50%;
+  right: 0.429em;
+  margin-top: -8px;
+}
+
+label {
+  color: #495057;
+}
+
+.layout-wrapper
+  .layout-menu-container
+  .layout-profile
+  .layout-profile-menu
+  li
+  a
+  .span-icon {
+  margin-right: 8px;
+  font-weight: unset;
+}
+
+// css is for table
+.p-paginator .p-paginator-pages .p-paginator-page {
+  border-radius: 50%;
+}
+
+//css overridden for badges
+.chip-color-1 .p-chip {
+  background-color: #2196f3;
+  color: white;
+}
+
+.chip-color-2 .p-chip {
+  background-color: #4caf50;
+  color: white;
+}
+
+.chip-color-3 .p-chip {
+  background-color: #ffc107;
+  color: white;
+}
+
+.chip-color-4 .p-chip {
+  background-color: #9c27b0;
+  color: white;
+}
+.error-label {
+  color: red;
+}
+
+.layout-wrapper .layout-topbar .layout-topbar-logo img {
+  margin-top: -6px;
+  height: 60px;
+}
+
+.dialog-width {
+  width: '50vw';
+}
+
+.invoice-wrapper .invoice-content .invoice-table-1 {
+  border: 1px solid #bcbcc1 !important;
+}
+.invoice-wrapper .invoice-content .invoice-table-1 .invoice-table-content {
+  background: none !important;
+}
+.invoice-table-row h5 {
+  margin-top: 5px;
+}
+.invoice-wrapper .invoice-content .invoice-header {
+  margin-bottom: 10px !important;
+}
+.invoice-table-header {
+  font-weight: 600;
+}
+.content-container {
+  padding: 25px;
+}
+// Table SCSS
+.p-datatable .p-datatable-header {
+  background: none !important;
+}
+.p-datatable .p-datatable-thead > tr > th {
+  background: none !important;
+}
+.login-body {
+  background: url('../src//assets//layout/images/p11-670x45001.png');
+  background-size: cover;
+  opacity: 0.8;
+  background-position: 440px 48%;
+  background-repeat: no-repeat;
+}
+
+// Span search icon SCSS
+.span-container > .p-inputtext {
+  padding-left: 2rem;
+}
+
+.span-container {
+  position: relative;
+  padding: unset;
+}
+
+.span-search {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  color: #6c757d;
+  margin-top: -0.5rem;
+}
+
+// Invalid Input scss
+.invalid-input {
+  border-color: #f44336;
+}
+
+.border-unset {
+  border-color: #ced4da !important;
+}
+
+// Invalid Input dropdown scss
+p-dropdown.invalid-input > .p-dropdown {
+  border-color: #f44336 !important;
+}
+
+p-dropdown.border-unset > .p-dropdown {
+  border-color: #ced4da !important;
+}
+
+.change-password-input-wrapper {
+  position: relative;
+  width: 300px;
+  margin-bottom: 24px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  input {
+    width: 100%;
+    padding-right: 16px;
+  }
+
+  i {
+    position: absolute;
+    color: #727272;
+    font-size: 16px;
+    top: 50%;
+    right: 0.429em;
+    margin-top: -8px;
+  }
+}
+
+.layout-wrapper .layout-menu-container .layout-menu li a .menuitem-badge {
+  font-size: 10px;
+}
+/* SCSS for remaining characters after text area */
+.textarea-remaining {
+  display: flex;
+  justify-content: end;
+  color: #495057;
+}
+
+// custom styles for scrollbar
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+p-table {
+  word-break: break-all;
+}
+
+.section-break {
+  border-bottom: 1px solid rgba(41, 43, 44, 0.1);
+}
+.custom-icon {
+  color: #495057;
+  font-size: 20px;
+}
+.center-align-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.custom-icon-delete {
+  color: #495057;
+  font-size: 18px;
+}
+.p-tree {
+  border: none !important;
+  padding: 0 !important;
+}
+.p-treenode-content {
+  padding-left: 0 !important;
+}
+.card {
+  padding: 2rem;
+}
+.search-box {
+  display: flex;
+  justify-content: end;
+  vertical-align: middle;
+  align-items: center;
+}
+// Increase the space between two form components
+.field {
+  margin-bottom: 1.5rem !important;
+}
+.content-end {
+  display: flex;
+  align-items: flex-end;
+}
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-width {
+  max-width: 100px;
+}
+// SCSS code for organization tree structure
+.tree-border {
+  border: 1px solid #ced4da;
+  padding: 16px;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+    box-shadow 0.2s;
+  appearance: none;
+  border-radius: 4px;
+}
+.tree-border-error {
+  border: 1px solid red !important;
+}
+.custom-tree {
+}
+:host ::ng-deep.p-tree-wrapper {
+  height: 150px !important;
+  overflow-y: auto !important;
+}
+.custom-tree::-webkit-scrollbar {
+  padding-left: 8px;
+  width: 10px; /* Adjust the width of the scrollbar */
+  background-color: #f5f5f5; /* Set the background color of the scrollbar track */
+}
+
+.custom-tree::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the color of the scrollbar thumb */
+  border-radius: 5px; /* Set the border radius of the scrollbar thumb */
+  border: 2px solid #f5f5f5; /* Add a border to the scrollbar thumb */
+}
+
+.custom-tree::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Set the color of the scrollbar thumb on hover */
+}
+.calendar-error {
+  border-color: red !important;
+}
+.required-field {
+  color: red;
+}
+.required-field-blue {
+  color: blue;
+}
+.effective-period {
+  color: green;
+}
+
+.layout-wrapper.layout-slim .layout-menu-container .layout-menu > li > ul {
+  width: max-content;
+}
+
+.layout-wrapper.layout-horizontal
+  .layout-menu-container
+  .layout-menu
+  > li
+  > ul {
+  width: max-content;
+}
+
+.layout-wrapper .layout-menu-container .layout-menu li a .menuitem-badge {
+  margin-left: 4px;
+}
+
+fieldset {
+  min-width: 0;
+}
+legend {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.p-paginator-current {
+  cursor: unset !important;
+}
+
+.underline-link {
+  text-decoration: underline !important;
+}
+// On page scroll, overlay elements of primeng were going over navbar (undesired behavior)
+// to fix that, z-index was changed throughout layout files, which resulted in
+// making z-index of overlay elements less than navbar, this indeed solved above bug
+// New bug: calendar was being cut off by navbar since the navbar now has higher z-index
+// below style fixes that
+p-calendar span div {
+  z-index: 2102 !important;
+}
+.p-datepicker {
+  z-index: 2102 !important;
+}
+h5 {
+  margin: 0;
+}
+
+// CSS for Prime Ng Card
+.p-card {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid #dee2e6;
+  background: #ffffff;
+  color: #495057;
+  border-radius: 4px;
+}
+.p-card-title {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(3 25 36 / 10%);
+}
+// CSS for prime Ng Tooltip
+.tooltip-big-width > .p-tooltip-text {
+  width: 550px !important;
+}
+.menu-item-icon {
+  min-width: 20px !important;
+  margin-top: 3px !important;
+}
+
+.invalid-input .p-calendar .p-inputtext {
+  border-color: #f44336 !important;
+}
+
+.border-unset .p-calendar .p-inputtext {
+  border-color: #ced4da !important;
+}
+
+.info-div {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.word-break-next-line {
+  white-space: normal;
+  word-break: break-word;
+}
+
+.p-dropdown-item.p-ripple {
+  white-space: normal;
+  word-break: break-word;
+}
+
+.layout-wrapper.layout-slim .layout-menu-container .layout-menu > li > ul {
+  max-height: 50vh !important;
+}
+
+.layout-config {
+  width: 18rem;
+}
+
+// Override file upload component
+
+.p-fileupload .p-fileupload-content {
+  padding: 0.5rem 0.5rem !important;
+}
+.p-fileupload-content .p-progressbar {
+  display: none !important  ;
+}

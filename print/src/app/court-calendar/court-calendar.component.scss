@@ -1,0 +1,73 @@
+.month-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust column count as needed */
+    gap: 20px;
+    border-radius: 4px;
+  }
+  
+  .month-cell {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  .date-list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for days of the week */
+    gap: 5px; /* Adjust gap as needed */
+    margin-top: 10px;
+  }
+  
+  .date-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px; /* Adjust width to create squares */
+    height: 36px; /* Adjust height to create squares */
+    border: 1px solid #ccc;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+  
+  .selected {
+    background-color: #009688; /* Highlight Mondays with blue color */
+    color: white;
+  }
+  .grid-item {
+    text-align: center;
+    margin: 5px; /* Add some margin between the items */
+  }
+  .cal-spacing {
+    margin: 1.5rem !important;
+  }
+  .calender-heading {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #ccc;
+    color: #6a7178;
+  }
+  .weekend {
+    background-color: grey; /* Highlight Mondays with blue color */
+    color: white;
+  }
+  .week-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6a7178;
+    font-weight: 600;
+  }
+  .hide {
+    display: none;
+  }
+  .calendar-labels {
+    display: flex;
+    width: 33.33%;
+    margin-left: auto;
+    justify-content: end !important;
+  }
+  .print-calendar-class {
+    width: min-content;
+  }
+  
