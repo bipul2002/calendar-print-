@@ -1,0 +1,29 @@
+{
+  "name": "print-div",
+  "version": "1.0.0",
+  "description": "print the div elements",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bipul2002/calendar-print-.git"
+  },
+  "keywords": [
+    "print",
+    "div"
+  ],
+  "author": "Debyans",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bipul2002/calendar-print-/issues"
+  },
+  "homepage": "https://github.com/bipul2002/calendar-print-#readme",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "files": ["lib/**/*"]
+}

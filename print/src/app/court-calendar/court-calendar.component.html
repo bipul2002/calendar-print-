@@ -1,12 +1,12 @@
 <div class="grid">
-    <div class="col-12">
-      <div class="card">
-        <div class="p-fluid p-formgrid">
-          <div class="grid align-items-center">
-            <h5 class="col-12 md:col-8">
+  <div class="col-12">
+    <div class="card">
+      <div class="p-fluid p-formgrid">
+        <div class="grid align-items-center" id="calander">
+          <h5 class="col-12 md:col-8">
             Court Calendar
-            </h5>
-            <!-- <div class="col-12 md:col-4 btn-container">
+          </h5>
+          <!-- <div class="col-12 md:col-4 btn-container">
               <button
                 *ngIf="courtCalendarForm.controls.court?.value"
                 pButton
@@ -21,149 +21,95 @@
                 ngxPrint
               ></button>
             </div> -->
-          </div>
-          <div class="section-break"></div>
-          <form [formGroup]="courtCalendarForm">
-            <div class="mt-5">
-              <div class="field grid align-items-center">
-              
-                
-                
-              </div>
-              <div class="field grid">
-              
-                
-              </div>
-              <div class="field grid">
-                <label htmlFor="selectAll" class="col-12 mb-2 md:col-3 md:mb-0">
+        </div>
+        <div class="section-break"></div>
+        <form [formGroup]="courtCalendarForm">
+          <div class="mt-5">
+            <div class="field grid align-items-center">
+
+
+
+            </div>
+            <div class="field grid">
+
+
+            </div>
+            <div class="field grid">
+              <label htmlFor="selectAll" class="col-12 mb-2 md:col-3 md:mb-0">
                 Select All
-                </label>
-  
-                <div class="flex align-items-center px-2">
-                  <p-checkbox
-                    data-test="monday"
-                    value="1"
-                    inputId="monday"
-                    formControlName="monday"
-                    [binary]="true"
-                    (click)="selectSpecificWeeks('monday', 1)"
-                  ></p-checkbox>
-                  <label for="1" class="ml-2">MONDAY</label>
-                </div>
-                <div class="flex align-items-center px-2">
-                  <p-checkbox
-                    data-test="tuesday"
-                    value="2"
-                    inputId="tuesday"
-                    formControlName="tuesday"
-                    [binary]="true"
-                    (click)="selectSpecificWeeks('tuesday', 2)"
-                  ></p-checkbox>
-                  <label for="2" class="ml-2">TUESDAY</label>
-                </div>
-  
-                <div class="flex align-items-center px-2">
-                  <p-checkbox
-                    data-test="wednesday"
-                    value="3"
-                    inputId="wednesday"
-                    formControlName="wednesday"
-                    [binary]="true"
-                    (click)="selectSpecificWeeks('wednesday', 3)"
-                  ></p-checkbox>
-                  <label for="3" class="ml-2">WEDNESDAY</label>
-                </div>
-                <div class="flex align-items-center px-2">
-                  <p-checkbox
-                    data-test="thursday"
-                    value="4"
-                    inputId="thursday"
-                    formControlName="thursday"
-                    [binary]="true"
-                    (click)="selectSpecificWeeks('thursday', 4)"
-                  ></p-checkbox>
-                  <label for="4" class="ml-2">THURSDAY</label>
-                </div>
-                <div class="flex align-items-center px-2">
-                  <p-checkbox
-                    data-test="friday"
-                    value="5"
-                    inputId="friday"
-                    formControlName="friday"
-                    [binary]="true"
-                    (click)="selectSpecificWeeks('friday', 5)"
-                  ></p-checkbox>
-                  <label for="5" class="ml-2">FRIDAY</label>
-                </div>
-                <div class="flex align-items-center px-2">
-                  <button
-                    pButton
-                    pRipple
-                    label='Clear All'
-                    class=""
-                    (click)="clearAll()"
-                  ></button>
-                </div>
+              </label>
+
+              <div class="flex align-items-center px-2">
+                <p-checkbox data-test="monday" value="1" inputId="monday" formControlName="monday" [binary]="true"
+                  (click)="selectSpecificWeeks('monday', 1)"></p-checkbox>
+                <label for="1" class="ml-2">MONDAY</label>
               </div>
-              <div class="section-break"></div>
-  
-              <div id="print-calender" class="mt-3 print-calendar-class">
-                <div
-                  class="calendar-labels"
-                  *ngIf="courtCalendarForm.controls.court?.value"
-                >
-                  <label for="court" class="ml-2 font-semibold"
-                    >{{ 'MASTER.COURT_CALENDAR.COURT' }} :
-                    {{ getCourtName() }}</label
-                  >
-                  <label for="year" class="ml-2 font-semibold"
-                    >{{ 'MASTER.COURT_CALENDAR.YEAR' }} :{{
-                      getYear()
-                    }}</label
-                  >
-                </div>
-                <div class="grid mt-2" style="overflow-x: auto">
-                  <div class="month-grid" *ngIf="showDiv">
-                    <div
-                      class="month-cell"
-                      *ngFor="
+              <div class="flex align-items-center px-2">
+                <p-checkbox data-test="tuesday" value="2" inputId="tuesday" formControlName="tuesday" [binary]="true"
+                  (click)="selectSpecificWeeks('tuesday', 2)"></p-checkbox>
+                <label for="2" class="ml-2">TUESDAY</label>
+              </div>
+
+              <div class="flex align-items-center px-2">
+                <p-checkbox data-test="wednesday" value="3" inputId="wednesday" formControlName="wednesday"
+                  [binary]="true" (click)="selectSpecificWeeks('wednesday', 3)"></p-checkbox>
+                <label for="3" class="ml-2">WEDNESDAY</label>
+              </div>
+              <div class="flex align-items-center px-2">
+                <p-checkbox data-test="thursday" value="4" inputId="thursday" formControlName="thursday" [binary]="true"
+                  (click)="selectSpecificWeeks('thursday', 4)"></p-checkbox>
+                <label for="4" class="ml-2">THURSDAY</label>
+              </div>
+              <div class="flex align-items-center px-2">
+                <p-checkbox data-test="friday" value="5" inputId="friday" formControlName="friday" [binary]="true"
+                  (click)="selectSpecificWeeks('friday', 5)"></p-checkbox>
+                <label for="5" class="ml-2">FRIDAY</label>
+              </div>
+              <div class="flex align-items-center px-2">
+                <button pButton pRipple label='Clear All' class="" (click)="clearAll()"></button>
+              </div>
+              <div class="print-button">
+                <button (click)="printDiv()">Print</button>
+              </div>
+            </div>
+            <div class="section-break"></div>
+
+            <div id="print-calender" class="mt-3 print-calendar-class">
+              <div class="calendar-labels" *ngIf="courtCalendarForm.controls.court?.value">
+                <label for="court" class="ml-2 font-semibold">{{ 'MASTER.COURT_CALENDAR.COURT' }} :
+                  {{ getCourtName() }}</label>
+                <label for="year" class="ml-2 font-semibold">{{ 'MASTER.COURT_CALENDAR.YEAR' }} :{{
+                  getYear()
+                  }}</label>
+              </div>
+              <div class="grid mt-2" style="overflow-x: auto">
+                <div class="month-grid" *ngIf="showDiv">
+                  <div class="month-cell" *ngFor="
                         let month of months;
                         let i = index;
                         trackBy: dayByObj
-                      "
-                    >
-                      <h3 class="calender-heading">
-                        {{ month.dateObj.format('MMMM YYYY') }}
-                      </h3>
-                      <div class="date-list">
-                        <div
-                          *ngFor="let week of weekdaysAbbreviated"
-                          class="week-name"
-                        >
-                          {{ week }}
-                        </div>
+                      ">
+                    <h3 class="calender-heading">
+                      {{ month.dateObj.format('MMMM YYYY') }}
+                    </h3>
+                    <div class="date-list">
+                      <div *ngFor="let week of weekdaysAbbreviated" class="week-name">
+                        {{ week }}
                       </div>
-                      <div class="date-list">
-                        <div
-                          [class.date-item]="day"
-                          *ngFor="
+                    </div>
+                    <div class="date-list">
+                      <div [class.date-item]="day" *ngFor="
                             let day of getDaysInMonth(month.dateObj);
                             let test = index;
                             trackBy: dayByObj
-                          "
-                          [id]="day?.id"
-                          class="cursor-pointer"
-                          [class.selected-date]="isSelectedWeek(day?.dateObj)"
-                          [class.weekend]="isWeekend(day?.dateObj)"
-                          (click)="dateSelected(day?.id, day)"
-                        >
-                          <div class="" *ngIf="day">
-                            <!-- <div class="text-xs text-center">
+                          " [id]="day?.id" class="cursor-pointer" [class.selected-date]="isSelectedWeek(day?.dateObj)"
+                        [class.weekend]="isWeekend(day?.dateObj)" (click)="dateSelected(day?.id, day)">
+                        <div class="" *ngIf="day">
+                          <!-- <div class="text-xs text-center">
                             {{ day.dateObj.format('dd') }}
                           </div> -->
-                            <div class="text-xs text-center">
-                              {{ day.dateObj.format('D') }}
-                            </div>
+                          <div class="text-xs text-center">
+                            {{ day.dateObj.format('D') }}
                           </div>
                         </div>
                       </div>
@@ -172,11 +118,11 @@
                 </div>
               </div>
             </div>
-          </form>
-        </div>
-        
+          </div>
+        </form>
       </div>
 
     </div>
+
   </div>
-  
+</div>

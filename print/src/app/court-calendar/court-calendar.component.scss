@@ -70,4 +70,20 @@
   .print-calendar-class {
     width: min-content;
   }
+
+  .print-button button {
+    background-color: #0a66c2; 
+    border: 2px solid #0a66c2; 
+    border-radius: 5px; 
+    color: white; 
+    padding: 8px 16px; 
+    font-size: 16px; 
+    cursor: pointer;
+  }
+  
+  /* Hover effect */
+  .print-button button:hover {
+    background-color: #0a4b8c; 
+    border-color: #0a4b8c; 
+  }
   

@@ -5,6 +5,7 @@ import { lastValueFrom } from 'rxjs';
 import { DateService } from '../shared/services/dates.service';
 
 
+
 @Component({
   selector: 'app-court-calendar',
   templateUrl: './court-calendar.component.html',
@@ -337,4 +338,9 @@ export class CourtCalendarComponent implements OnInit {
   configureSlotDialogHide() {
     this.clearSlots = true;
   }
-}
+  printDiv(){
+    console.log("working");
+    
+    
+  }
+} 
