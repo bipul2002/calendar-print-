@@ -3,6 +3,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import * as moment from 'moment'; // Import moment for date manipulation
 import { lastValueFrom } from 'rxjs';
 import { DateService } from '../shared/services/dates.service';
+import { PrintLibraryService } from 'argus-custom-print';
 
 
 
@@ -35,7 +36,8 @@ export class CourtCalendarComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private cdr: ChangeDetectorRef,
-    private dateService: DateService
+    private dateService: DateService,
+    private print: PrintLibraryService
   ) {}
 
   ngOnInit() {
@@ -338,8 +340,9 @@ export class CourtCalendarComponent implements OnInit {
   configureSlotDialogHide() {
     this.clearSlots = true;
   }
-  printDiv(){
+  printDiv(div: string){
     console.log("working");
+    this.print.printDiv(div);
     
     
   }
