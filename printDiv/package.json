@@ -1,5 +1,5 @@
 {
-  "name": "print-div",
+  "name": "argus-print-div",
   "version": "1.0.0",
   "description": "print the div elements",
   "main": "lib/index.js",
